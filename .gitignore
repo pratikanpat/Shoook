@@ -1,0 +1,17 @@
+# Executables
+*.exe
+*.out
+*.o
+*.obj
+
+# Build folders
+build/
+dist/
+
+# VS Code local machine configs
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+
+# OS junk
+.DS_Store
+Thumbs.db
