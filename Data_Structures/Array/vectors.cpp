@@ -1,0 +1,13 @@
+//for each
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int>vec = {1, 2, 3, 4};
+    for(int val : vec){
+        cout << val << endl;
+    }
+
+    return 0;
+}
