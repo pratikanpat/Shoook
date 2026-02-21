@@ -1,30 +1,21 @@
 // homework
 // try find nth fibonaci and prime numbers from 1 to n
-
-
-// binary to decimal
-
-#include <bits/stdc++.h>
+//figure out how to find if a number is power of 2 without any loop. 
+#include <iostream>
 using namespace std;
 
-int binToDecimal (int num){
-    int decimal = 0;
-    int power = 1;
-
-    while(num > 0){
-        int remainder = num % 10;
-        decimal += remainder*power;
-
-        //number update
-        num = num / 10;
-        //power update
-        power = power * 2;
-    }
-    return decimal;
+bool isPowerOfTwo(int n) {
+    return n > 0 && (n & (n - 1)) == 0;
 }
 
 int main() {
-    cout<<binToDecimal(1000);
+    int n = 33;
+
+    if (isPowerOfTwo(n)) {
+        cout << "Yes";
+    } else {
+        cout << "No";
+    }
 
     return 0;
 }
